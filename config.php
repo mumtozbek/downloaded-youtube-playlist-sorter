@@ -4,3 +4,4 @@ ini_set('display_errors', 'on');
 
 define('API_KEY', 'AIzaSyAUzWvChTiU1TNABg1rPIhOUR4LfLrGxLA');
 define('PATH', '[OUTPUT-FOLDER]');
+define('FFMPEG_PATH', 'ffmpeg');

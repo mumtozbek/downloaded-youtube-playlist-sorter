@@ -26,7 +26,7 @@ if ($argc > 1) {
       $full = preg_replace('#\.(mp4|webm)$#', '.full.${1}', $video);
       $audio = preg_replace('#\.(mp4|webm)#', '_a.${1}', $video);
       if (!is_file($full) && is_file($audio)) {
-        exec('ffmpeg -y -i "' . $video . '" -i "' . $audio . '" -c copy "' . $full . '"', $output, $result);
+        exec(FFMPEG_PATH . ' -y -i "' . $video . '" -i "' . $audio . '" -c copy "' . $full . '"', $output, $result);
         echo '"' . basename($video) . '" merged with "' . basename($audio) . '"' . "\n";
       }
     }
