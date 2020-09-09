@@ -1,6 +1,6 @@
 <?php
 // Definitions
-define('PATH', 'a:/YouTube/');
+require_once ('config.php');
 
 // Functions
 function getFiles($path) {
